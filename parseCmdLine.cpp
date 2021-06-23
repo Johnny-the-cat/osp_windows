@@ -185,15 +185,15 @@ C:\\real\\path - directory for the datafile\n\nosp version - 1.1.0\n";
 		}
 	}
 
-	if (gotprimary == FALSE)
+	if (gotprimary == FALSE && strcmp(pathparameter, "gennext") != 0)
 	{
 		printf("Argument primary is missed\n");
 		exit(EXIT_FAILURE);
 	}
 
-	if (gotprimary == FALSE && strcmp(pathparameter, "gennext") != 0)
+	if (gotstandby == FALSE)
 	{
-		printf("Argument primary is missed\n");
+		printf("Argument standby is missed\n");
 		exit(EXIT_FAILURE);
 	}
 
